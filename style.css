@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body{
+    background-color: #1A1924;
+    color: white;
+    font-family: 'roboto', Arial, sans-serif
+    
+}
+
+
+:root{
+    font-size: 62.5%;
+}
+
+#chat-box{
+   padding: 32px 48px;
+   height: 100vh;
+   width: 100vw;
+   
+   display: grid;
+   grid-template-rows: max-content 1fr max-content;
+}
+#top-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#info{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 16px;
+}
+
+#info-status{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#info-status h1#nome{
+    font-weight: bold;
+    font-size: 2em;
+}
+#status{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+#circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #00B37E;
+}
+#close-chat i{
+    font-size: 2em;
+    cursor: pointer;
+
+}
+#chat{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+#chat span#time{
+    text-align: center;
+
+}
+#you{
+    width: max-content;
+}
+
