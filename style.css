@@ -65,15 +65,15 @@ body{
 
 }
 #chat{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+   display: grid;
+   overflow-y: scroll;
+   font-size: 2rem;
+  
+   
 }
-#chat span#time{
+#ultima-vez{
     text-align: center;
-
-}
-#you{
-    width: max-content;
+    line-height: 20px;
+    
 }
 
