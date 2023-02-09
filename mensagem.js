@@ -1,4 +1,4 @@
 chat = document.getElementById("chat")
-mensagem_purple = document.getElementsByClassName("circle-i")
-mensagem_blue = document.getElementsByClassName("circle-you")
-mensagem_purple.add
+mensagempurple = document.getElementsByClassName("circle-i")[0]
+mensagemblue = document.getElementsByClassName("circle-you")[0]
+mensagempurple.addE
