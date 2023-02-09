@@ -9,7 +9,7 @@ function clicou_purple(){
     var horaio_atual = hora.getHours()
     var minutos_atual = hora.getMinutes()
     var status_horario = document.getElementById("ultima-vez")
-    status_horario.append(`${horaio_atual}:${minutos_atual}`)
+    status_horario.innerHTML = `${horaio_atual}:${minutos_atual}`
     var chat = document.getElementById("chat")
     var mensagem = document.getElementById("mensagem-input")
     var valor_mensagem = String(mensagem.value)
