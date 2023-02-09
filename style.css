@@ -67,7 +67,7 @@ body{
 #chat{
    display: grid;
    padding: 10px;
-   overflow-y: scroll;
+   overflow-y: auto;
    font-size: 2rem; 
 }
 #chat::-webkit-scrollbar-thumb{
@@ -87,13 +87,16 @@ body{
     line-height: 20px;
     
 }
-.body{
+.you .body{
     background-color: purple;
     padding: 10px 15px;
     width: fit-content;
     max-width: 236px;
     word-break: break-word;
     border-radius: 10px 10px 10px 2px;
+}
+.mensagem.i,.mensagem.you{
+    margin-bottom: 15px;
 }
 .mensagem.i{
     display: flex;
@@ -106,6 +109,7 @@ body{
 .i .body{
     background-color: rgb(0, 79, 238);
     border-radius: 10px 10px 2px 10px;
+    padding: 10px 15px;
     
 }
 #bottom-input{
@@ -137,6 +141,9 @@ body{
     font-size: 2em;
     background-color: #2f2840;
     color: white;
+}
+i.fa-solid.fa-microphone{
+    font-size: 43px;
 }
 #mensagem-input:focus{
     outline: none;
