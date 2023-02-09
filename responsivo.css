@@ -5,4 +5,13 @@
     #bottom-input{
        flex-direction: column;
     }
+    #top-info{
+        justify-content: center;
+    }
+    #mensagem-input{
+        padding: 10px 27px;
+    }
+    #close-chat i{
+        display: none;
+    }
 }
