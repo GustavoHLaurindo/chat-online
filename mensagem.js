@@ -3,7 +3,6 @@ var mensagempurple = document.getElementsByClassName("circle-i")[0]
 var mensagemblue = document.getElementsByClassName("circle-you")[0]
 mensagempurple.addEventListener("click", clicou_purple)
 mensagemblue.addEventListener("click", clicou_blue)
-
 function clicou_purple(){
     var hora = new Date()
     var horaio_atual = hora.getHours()
@@ -71,6 +70,7 @@ function clicou_blue(){
     chat.appendChild(caixa_mensagem)
     horario.appendChild(valor_horario)
     corpo_mensagem.append(valor_mensagem)
+    localStorage.setItem("mensagem-blue", valor_mensagem)
     caixa_mensagem.appendChild(horario)
     caixa_mensagem.appendChild(corpo_mensagem)
     mensagem.value = ""

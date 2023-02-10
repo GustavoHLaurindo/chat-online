@@ -69,7 +69,7 @@ body{
    display: grid;
    padding: 10px;
    overflow-y: auto;
-   font-size: 2rem; 
+   font-size: 2.2em;
 }
 #chat::-webkit-scrollbar-thumb{
     background-color: #2a2638;
@@ -120,7 +120,7 @@ body{
     gap: 10px;
 }
 .circle-i,.circle-you{
-    padding: 18px;
+    padding: 15px;
     border-radius: 50%;
     cursor: pointer;
     border: 6px solid rgba(0, 0, 0, 0.447);
@@ -134,17 +134,19 @@ body{
 #circles{
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 #mensagem-input{
     padding:10px 50px;
     border-radius: 20px;
     border: none;
-    font-size: 2em;
+    font-size: 2.2em;
     background-color: #2f2840;
     color: white;
 }
 i.fa-solid.fa-microphone{
-    font-size: 43px;
+    font-size: 5em;
+    cursor: pointer;
 }
 #mensagem-input:focus{
     outline: none;
