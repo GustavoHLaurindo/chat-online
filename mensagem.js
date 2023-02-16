@@ -1,4 +1,3 @@
-
 var mensagempurple = document.getElementsByClassName("circle-i")[0]
 var mensagemblue = document.getElementsByClassName("circle-you")[0]
 mensagempurple.addEventListener("click", clicou_purple)
@@ -8,7 +7,12 @@ function clicou_purple(){
     var horaio_atual = hora.getHours()
     var minutos_atual = hora.getMinutes()
     var status_horario = document.getElementById("ultima-vez")
-    status_horario.innerHTML = `${horaio_atual}:${minutos_atual}`
+    if(minutos_atual < 10){
+        status_horario.innerHTML = `Hoje as ${horaio_atual}:0${minutos_atual} ` 
+    }
+    else{
+        status_horario.innerHTML = `Hoje as ${horaio_atual}:${minutos_atual}`
+    }
     var chat = document.getElementById("chat")
     var mensagem = document.getElementById("mensagem-input")
     var valor_mensagem = String(mensagem.value)
@@ -16,6 +20,7 @@ function clicou_purple(){
         mensagem.placeholder = "digite uma mensagem :)"
     }
     else{
+    tocarMusica()
     mensagem.placeholder = "Digite sua mensagem"
     var caixa_mensagem = document.createElement("div")
     var horario = document.createElement("div")
@@ -45,7 +50,12 @@ function clicou_blue(){
     var horaio_atual = hora.getHours()
     var minutos_atual = hora.getMinutes()
     var status_horario = document.getElementById("ultima-vez")
-    status_horario.innerHTML = `hoje as ${horaio_atual}:${minutos_atual}`
+    if(minutos_atual < 10 || horaio_atual == 0){
+        status_horario.innerHTML = `Hoje as 0${horaio_atual}:0${minutos_atual}`
+    }
+    else{
+        status_horario.innerHTML = `Hoje as ${horaio_atual}:${minutos_atual}`
+    }
     var chat = document.getElementById("chat")
     var mensagem = document.getElementById("mensagem-input")
     var valor_mensagem = String(mensagem.value)
@@ -53,6 +63,7 @@ function clicou_blue(){
         mensagem.placeholder = "digite uma mensagem :)"
     }
     else{
+    tocarMusica()
     mensagem.placeholder = "Digite sua mensagem"
     var caixa_mensagem = document.createElement("div")
     var horario = document.createElement("div")
@@ -75,4 +86,8 @@ function clicou_blue(){
     caixa_mensagem.appendChild(corpo_mensagem)
     mensagem.value = ""
    }
+}
+function tocarMusica(){
+    const audio = new Audio('sound/toque.mp3');
+    audio.play()
 }
