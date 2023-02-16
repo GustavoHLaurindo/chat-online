@@ -50,8 +50,8 @@ function clicou_blue(){
     var horaio_atual = hora.getHours()
     var minutos_atual = hora.getMinutes()
     var status_horario = document.getElementById("ultima-vez")
-    if(minutos_atual < 10 || horaio_atual == 0){
-        status_horario.innerHTML = `Hoje as 0${horaio_atual}:0${minutos_atual}`
+    if(minutos_atual < 10){
+        status_horario.innerHTML = `Hoje as ${horaio_atual}:0${minutos_atual} ` 
     }
     else{
         status_horario.innerHTML = `Hoje as ${horaio_atual}:${minutos_atual}`
